@@ -1,0 +1,19 @@
+.section {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.heading {
+  font-size: 40px;
+  color: #525252;
+  margin-bottom: 50px;
+}
+.section ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}

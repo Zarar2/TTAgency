@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  hsla: (0, 0%, 25.88%, 1);
+}
+
+.container p {
+  font-size: 17px;
+  margin-bottom: 17px;
+}
+
+.accordion button {
+  padding-top: 0 !important;
+}
+
+.heading {
+  font-size: 2.8rem;
+}
+.sections {
+  width: 35%;
+}
+
+.container video {
+  border-radius: 35px;
+}

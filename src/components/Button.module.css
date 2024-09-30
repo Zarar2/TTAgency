@@ -1,0 +1,23 @@
+.button {
+  border-radius: 300px;
+  display: inline-block;
+  position: relative;
+  background-color: #34b6f8;
+  padding: 15px 30px;
+  height: auto;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.button:hover {
+  opacity: 0.8;
+  background-color: #29a1dd;
+}
+
+.button a {
+  letter-spacing: 0.65rem;
+  position: relative;
+  color: white;
+  font-weight: 700;
+}
