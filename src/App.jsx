@@ -10,7 +10,7 @@ function App() {
           <Route path="/" element={<Landing />} />
         </Routes>
         <Routes>
-          <Route path="pricing" element={<Pricing />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Routes>
       </BrowserRouter>
     </>

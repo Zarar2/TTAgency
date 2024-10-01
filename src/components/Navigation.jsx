@@ -6,7 +6,7 @@ export default function Navigation() {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link to="pricing">PRICING</Link>
+          <Link to="/pricing">PRICING</Link>
         </li>
         <li>
           <Link>CASE STUDIES</Link>
