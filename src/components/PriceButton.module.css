@@ -1,0 +1,36 @@
+.shadow {
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 25px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: all 0.2 ease;
+}
+
+.button {
+  display: block;
+  padding: 10px 5px;
+  border-radius: 25px;
+  font-size: 1.25rem;
+  background: white;
+  color: black;
+  transform: translateY(-6px);
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in;
+}
+
+.shadow:hover .button {
+  transform: translateY(0px);
+}
+
+.button a {
+  padding: 10px 5px;
+  width: 100%;
+  margin: auto;
+  border-radius: 15px;
+}

@@ -1,23 +1,47 @@
-.button {
+.primaryButton,
+.secondaryButton {
   border-radius: 300px;
   display: inline-block;
   position: relative;
-  background-color: #34b6f8;
+
   padding: 15px 30px;
   height: auto;
+  background-color: transparent;
   border: 1px solid black;
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
 
-.button:hover {
+.primaryButton:hover,
+.secondaryButton:hover {
   opacity: 0.8;
-  background-color: #29a1dd;
+  background-color: #34b6f8;
+  box-shadow: 0px 0px 25px 2px rgb(52, 182, 248, 0.6);
+  border-color: transparent;
 }
 
-.button a {
+.primaryButton a,
+.secondaryButton a {
   letter-spacing: 0.65rem;
   position: relative;
   color: white;
+  color: black;
   font-weight: 700;
+}
+
+.primaryButton:hover a,
+.secondaryButton:hover a {
+  color: white;
+}
+
+.secondaryButton {
+  padding: 8px 16px;
+}
+
+.secondaryButton a {
+  letter-spacing: 0.2rem;
+  position: relative;
+
+  color: black;
+  font-weight: 600;
 }

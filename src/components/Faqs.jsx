@@ -8,6 +8,7 @@ export default function Faqs() {
       <div className={styles.description}>
         <p>
           Everything that we do is centered around getting you better results.
+          <br />
           But what does that look like?
         </p>
         <p>

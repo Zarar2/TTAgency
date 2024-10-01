@@ -1,0 +1,28 @@
+.tableContainer {
+  width: 75%;
+  border-radius: 15px;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+.table {
+  width: 100% !important;
+}
+.table th {
+  width: 50%;
+  line-height: 1.5;
+  font-size: 24px;
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.table tr {
+  line-height: 1.5;
+  font-size: 17px;
+}
+.tableHead {
+  text-align: center;
+  font-size: 24 !important;
+}
