@@ -53,7 +53,60 @@
   padding-right: 10px;
 }
 
-:root {
+.modal-content label {
+  color: rgb(3, 54, 61);
+  font-family: "Sharp Sans", Arial, sans-serif;
+  font-style: normal;
+  line-height: calc(1em + 8px);
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin: 0px;
+}
+
+.input {
+  margin-top: 8px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.input input,
+.input select,
+.input textarea {
+  appearance: none;
+  transition: border-color 0.25s ease-in-out, box-shadow 0.1s ease-in-out,
+    background-color 0.25s ease-in-out, color 0.25s ease-in-out,
+    z-index 0.25s ease-in-out;
+  border: 1px solid rgb(143, 153, 162);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-family: inherit;
+  padding: 0.625em 0.75em;
+  min-height: 40px;
+  line-height: 1.125;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(23, 73, 77);
+
+  background: rgb(248, 249, 249);
+  border-radius: 0px;
+  border: none;
+  box-shadow: rgb(104, 115, 125) 0px 0px 0px 1px inset;
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 48px;
+  padding: 12px;
+}
+
+.input input:focus-within,
+.input select:focus-within,
+.input textarea:focus-within {
+  outline: none;
+  box-shadow: rgb(2, 128, 121) 0px 0px 0px 2px inset;
+}
+/* :root {
   --input-color: #99a3ba;
   --input-border: #cdd9ed;
   --input-background: #fff;
@@ -165,6 +218,8 @@
   display: flex;
   align-items: center;
 }
+
+*/
 .close {
   display: block;
 

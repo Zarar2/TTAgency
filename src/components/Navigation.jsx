@@ -8,18 +8,16 @@ export default function Navigation() {
         <li>
           <Link to="/pricing">PRICING</Link>
         </li>
-        <li>
-          <Link to="/testinomials">TESTINOMAILS</Link>
-        </li>
+
         <li>
           <Link>CASE STUDIES</Link>
         </li>
         <li>
-          <Link>WHO ARE WE</Link>
+          <Link to="/about">WHO ARE WE</Link>
         </li>
 
         <li>
-          <Link to="/data">AFFILAITE DATA</Link>
+          <Link to="/affiliatesData">AFFILAITE DATA</Link>
         </li>
 
         <li>

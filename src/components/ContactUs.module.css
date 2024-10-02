@@ -1,0 +1,112 @@
+.cardContainer {
+  display: grid;
+  width: 50%;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 50px;
+  gap: 20px;
+}
+.chatLink:hover {
+  color: #9397ff;
+  cursor: pointer;
+}
+.mainHeading {
+  font-size: 52px;
+  font-weight: 600;
+  display: block;
+  width: 80%;
+  margin: auto;
+  line-height: 1.192em;
+  text-align: center;
+  margin: auto;
+
+  margin-bottom: 40px;
+}
+.icon {
+  margin-bottom: 35px;
+  height: 37.44px;
+  width: 37.44px;
+}
+
+.contactCard {
+  padding: 30px 30px 4px;
+  padding-bottom: 4px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 25px;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactCard:hover {
+  transform: translate3d(0, -2px, 2px);
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.contactCard .heading {
+  font-size: 22px;
+  margin: 0px 0px 10px;
+}
+
+.description {
+  font-size: 15px;
+  color: #69696b;
+  margin-bottom: 35px;
+}
+
+.link {
+  color: #9397ff;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+  display: flex;
+  font-size: 16px;
+}
+
+.details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.secondaryHeading {
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.5em;
+
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+.mailing {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.mailing a {
+  color: #9397ff;
+  margin-left: 1%;
+  font-size: 16px;
+  line-height: 1.75em;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+  display: inline-block;
+}
+
+.message {
+  padding-top: 58px;
+  width: 50%;
+  margin: auto;
+}
+.phone {
+  margin-bottom: -5px;
+}

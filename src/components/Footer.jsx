@@ -69,13 +69,11 @@ export default function Footer() {
               <strong>About</strong>
             </h1>
             <li>
-              <Link>Who are we </Link>
+              <Link to="/about">Who are we </Link>
             </li>
+
             <li>
-              <Link>Careers</Link>
-            </li>
-            <li>
-              <Link>Conctact Us</Link>
+              <Link to="/contact">Conctact Us</Link>
             </li>
           </ul>
         </div>
@@ -85,12 +83,7 @@ export default function Footer() {
             <h1>
               <strong>Services</strong>
             </h1>
-            <li>
-              <Link>Virals Offer </Link>
-            </li>
-            <li>
-              <Link>Tik Tok Shops</Link>
-            </li>
+
             <li>
               <Link to="/pricing">Pricing</Link>
             </li>
@@ -102,9 +95,7 @@ export default function Footer() {
             <h1>
               <strong>Info</strong>
             </h1>
-            <li>
-              <Link>Careers </Link>
-            </li>
+
             <li>
               <Link>Terms Of Service</Link>
             </li>

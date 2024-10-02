@@ -10,9 +10,12 @@ export default function PricingContainer() {
         price="$300 USD"
         duration="3-Days"
         priceFeature={[
-          "1 Shop Automation",
-          "60 Messages/Day",
-          "1800 Messages/Month",
+          "Dedicated Team Growth",
+          "TikTok Shop Affiliate Outreach",
+          "TikTok Shop Follow-Up Messages",
+          "TikTok Shop Affiliate Analysis",
+          "TikTok Shop Sparks Ads Management",
+          "TikTok Shop Mass Outreach (5,000+ daily)",
         ]}
       />
       <PriceItem
@@ -21,9 +24,12 @@ export default function PricingContainer() {
         price="$1000 USD"
         duration="/month"
         priceFeature={[
-          "1 Shop Automation",
-          "800 Messages/Day",
-          "800 Target Collaboration",
+          "All Silver Package Features",
+          "TikTok Samples Request Handling",
+          "TikTok Shop Mass Outreach (7,000+ daily)",
+          "Personalized Messaging",
+          "Content Creation and Messaging for Affiliates",
+          "Ads Management on Meta, TikTok, and Google Platforms",
         ]}
       />
       <PriceItem
@@ -32,9 +38,13 @@ export default function PricingContainer() {
         price="$1500 USD"
         duration="/month"
         priceFeature={[
-          "3 Shop Automation",
-          "Unlimited Messages",
-          "Unlimited Target Collaboration",
+          "All Gold Package Features",
+          "TikTok Shop Mass Outreach (10,000+ daily)",
+          "Social Commerce Ads Management",
+          "Ads Management on Meta, TikTok, Google, Bing, and Amazon Platforms",
+          "Email Marketing & Social Marketing",
+          "Landing Page Development",
+          "TikTok Shop Product Management",
         ]}
       />
 
@@ -45,9 +55,9 @@ export default function PricingContainer() {
         price="$2000 USD"
         duration="/month"
         priceFeature={[
-          "3 Shop Automation",
-          "Unlimited Messages",
-          "Unlimited Target Collaboration",
+          "All Platinum Package Features",
+          "TikTok Shop Mass Outreach (15,000+ daily)",
+          "SMS and Phone Call Marketing",
         ]}
       />
     </div>

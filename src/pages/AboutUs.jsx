@@ -1,12 +1,12 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Testinomial from "../components/Testimonial";
+import ServicesOffering from "../components/ServicesOffering";
 
-export default function TestinomialsPage() {
+export default function AboutUs() {
   return (
     <>
       <Header />
-      <Testinomial />
+      <ServicesOffering />
       <Footer />
     </>
   );

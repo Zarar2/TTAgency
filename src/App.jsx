@@ -1,7 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Pricing from "./pages/Pricing";
-import TestinomialsPage from "./pages/TestimonialsPage";
+
+import Contact from "./pages/Contact";
+import AboutUs from "./pages/AboutUs";
+import AffiliatesData from "./pages/AffiliatesData";
 
 function App() {
   return (
@@ -10,7 +13,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/pricing" element={<Pricing />} />
-          <Route path="/testinomials" element={<TestinomialsPage />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/affiliatesData" element={<AffiliatesData />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -11,6 +11,12 @@
   transition: all 0.2 ease;
 }
 
+.parent {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+
 .button {
   display: block;
   padding: 10px 5px;
