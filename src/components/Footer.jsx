@@ -92,7 +92,7 @@ export default function Footer() {
               <Link>Tik Tok Shops</Link>
             </li>
             <li>
-              <Link to="pricing">Pricing</Link>
+              <Link to="/pricing">Pricing</Link>
             </li>
           </ul>
         </div>

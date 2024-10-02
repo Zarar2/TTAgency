@@ -5,8 +5,9 @@ export default function PricingContainer() {
   return (
     <div className={styles.container}>
       <PriceItem
-        heading="FREE"
-        price=""
+        type="silver"
+        heading="Silver"
+        price="$300 USD"
         duration="3-Days"
         priceFeature={[
           "1 Shop Automation",
@@ -15,8 +16,9 @@ export default function PricingContainer() {
         ]}
       />
       <PriceItem
-        heading="Starter"
-        price="$70 USD"
+        type="gold"
+        heading="Gold"
+        price="$1000 USD"
         duration="/month"
         priceFeature={[
           "1 Shop Automation",
@@ -25,8 +27,22 @@ export default function PricingContainer() {
         ]}
       />
       <PriceItem
-        heading="Gold"
-        price="$150 USD"
+        type="platinum"
+        heading="Platinum"
+        price="$1500 USD"
+        duration="/month"
+        priceFeature={[
+          "3 Shop Automation",
+          "Unlimited Messages",
+          "Unlimited Target Collaboration",
+        ]}
+      />
+
+      <PriceItem
+        // type="platinum"
+        type="diamond"
+        heading="Diamond"
+        price="$2000 USD"
         duration="/month"
         priceFeature={[
           "3 Shop Automation",

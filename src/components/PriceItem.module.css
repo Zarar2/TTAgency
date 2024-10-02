@@ -2,8 +2,23 @@
   border-radius: 15px;
   border: 1px solid rgb(207, 207, 186);
   padding-bottom: 25px;
+  box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
+.silver {
+  background-color: #c4c4c4;
+}
+.gold {
+  background-color: #efbf04;
+}
+
+.platinum {
+  background-color: #d9d9d9;
+}
+.diamond {
+  background-color: #e1f5fe;
+}
 .price {
   font-size: 24px;
   font-weight: 600;

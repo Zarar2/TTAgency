@@ -22,78 +22,88 @@ export default function ModalContact() {
       {isModalOpen && (
         <div className={styles["modal-overlay"]}>
           <div className={styles["modal-content"]}>
+            <span
+              className={styles["close"]}
+              onClick={() => setIsModalOpen(false)}
+            >
+              X
+            </span>
             <form action="">
-              <label htmlFor="Name">
-                Name <span>*</span>{" "}
-              </label>
-              <input
-                id="Name"
-                required
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Write your name here..."
-              />
+              <div className={styles["form-group"]}>
+                <span>Name</span>
+                <input
+                  className={styles["form-field"]}
+                  id="Name"
+                  required
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Write your name here..."
+                />
+              </div>
 
-              <label htmlFor="Number">
-                Number <span>*</span>
-              </label>
-              <input
-                required
-                id="Number"
-                type="number"
-                value={number}
-                onChange={(e) => setNumber(e.target.value)}
-                placeholder="Write your Number..."
-              />
+              <div className={styles["form-group"]}>
+                <span>Number</span>
 
-              <label htmlFor="Email">
-                Email <span>*</span>
-              </label>
-              <input
-                id="Email"
-                required
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Write your email..."
-              />
+                <input
+                  className={styles["form-field"]}
+                  required
+                  id="Number"
+                  type="number"
+                  value={number}
+                  onChange={(e) => setNumber(e.target.value)}
+                  placeholder="Write your Number..."
+                />
+              </div>
 
-              <label htmlFor="Message">
-                Message <span>*</span>
-              </label>
-              <textarea
-                name="Message"
-                id="Message"
-                value={message}
-                rows={5}
-                onChange={(e) => setMessage(e.target.value)}
-                placeholder="Write your Message..."
-              ></textarea>
+              <div className={styles["form-group"]}>
+                <span>Email</span>
 
-              <label htmlFor="AffiliateMarketing">
-                Select Affiliate Marketing <span>*</span>
-              </label>
-              <select
-                required
-                name=""
-                id="AffiliateMarketing"
-                value={affiliateMarketing}
-                onChange={(e) => setAffiliateMarketing(e.target.value)}
-              >
-                <option value="Instagram">Instgaram</option>
-                <option value="Meta">Meta</option>
+                <input
+                  id="Email"
+                  required
+                  className={styles["form-field"]}
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Write your email..."
+                />
+              </div>
 
-                <option value="Twitter">Twitter</option>
-              </select>
+              <div className={styles["form-group"]}>
+                <span>Message</span>
 
+                <textarea
+                  name="Message"
+                  className={styles["form-field"]}
+                  id="Message"
+                  value={message}
+                  rows={5}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="Write your Message..."
+                ></textarea>
+              </div>
+
+              <div className={styles["form-group"]}>
+                <span>Select Affiliate Marketing</span>
+
+                <select
+                  className={styles["form-field"]}
+                  required
+                  name=""
+                  id="AffiliateMarketing"
+                  value={affiliateMarketing}
+                  onChange={(e) => setAffiliateMarketing(e.target.value)}
+                >
+                  <option value="Instagram">Instgaram</option>
+                  <option value="Meta">Meta</option>
+
+                  <option value="Twitter">Twitter</option>
+                </select>
+              </div>
               <div className={styles.buttonContainer}>
                 <Button type="secondary" onClick={handleSubmit}>
                   SUBMIT
-                </Button>
-
-                <Button type="secondary" onClick={() => setIsModalOpen(false)}>
-                  CLOSE
                 </Button>
               </div>
             </form>
