@@ -6,7 +6,7 @@
   padding-bottom: 50px;
   gap: 20px;
 }
-.chatLink:hover {
+.link:hover {
   color: #9397ff;
   cursor: pointer;
 }
@@ -59,7 +59,7 @@
 }
 
 .link {
-  color: #9397ff;
+  color: #3e43ca;
   margin-top: 15px;
   margin-bottom: 10px;
   transition: color 0.3s;
@@ -92,7 +92,7 @@
 }
 
 .mailing a {
-  color: #9397ff;
+  color: #3e43ca;
   margin-left: 1%;
   font-size: 16px;
   line-height: 1.75em;

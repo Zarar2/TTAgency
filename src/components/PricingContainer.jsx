@@ -8,7 +8,7 @@ export default function PricingContainer() {
         type="silver"
         heading="Silver"
         price="$300 USD"
-        duration="3-Days"
+        duration="/month"
         priceFeature={[
           "Dedicated Team Growth",
           "TikTok Shop Affiliate Outreach",
@@ -49,7 +49,6 @@ export default function PricingContainer() {
       />
 
       <PriceItem
-        // type="platinum"
         type="diamond"
         heading="Diamond"
         price="$2000 USD"

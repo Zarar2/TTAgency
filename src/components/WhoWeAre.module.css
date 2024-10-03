@@ -1,0 +1,26 @@
+.container {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+.bulletsContainer {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  gap: 25px;
+  align-items: center;
+  padding: 25px;
+}
+.mainPoints {
+  padding: 50px;
+}
+.mainPoints .heading {
+  font-size: 26px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.mainPoints .description {
+  font-size: 17px;
+}

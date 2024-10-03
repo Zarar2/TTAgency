@@ -5,6 +5,19 @@ export default function Faqs() {
     <div className={styles.faqs}>
       <h1 className={styles.heading}>Why partner with upGrowth?</h1>
 
+      <ul className={styles.saleList}>
+        <li>
+          🚀 <strong> 30x Growth in Sales – </strong>Just in the first month!
+        </li>
+        <li>
+          📈 <strong> 40x Sales Increase –</strong> Accelerated growth in the
+          second month!
+        </li>
+        <li>
+          💥 <strong>50x Sales Boom – </strong> Massive success by the third
+          month!
+        </li>
+      </ul>
       <div className={styles.description}>
         <p>
           Everything that we do is centered around getting you better results.
@@ -38,8 +51,14 @@ export default function Faqs() {
             We use all of the tools that we have to help your business grow.
           </strong>
         </p>
+
         <p>
-          <strong>For us, that could be...</strong>
+          <strong>
+            <h1 className={styles.secondaryHeading}>
+              The choice is yours: Do you want to grow with us using our
+              strategies?
+            </h1>
+          </strong>
         </p>
       </div>
     </div>

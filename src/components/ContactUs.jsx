@@ -4,7 +4,7 @@ import service from "../assets/headphone.svg";
 import message from "../assets/message.svg";
 import styles from "./ContactUs.module.css";
 import mail from "../assets/mail.svg";
-import phone from "../assets/phone.svg";
+
 const data = [
   {
     icon: bag,
@@ -12,7 +12,7 @@ const data = [
     description:
       "If you have any questions or need assistance, feel free to contact us by email or fill out the form.",
     link: "support@ttinit.com",
-    href: "#",
+    href: "mailto: support@ttinit.com",
   },
 
   {
@@ -21,7 +21,7 @@ const data = [
     description:
       "To arrange a call with our team, please select a time slot that best suits you.",
     link: "Schedule Call",
-    href: "#",
+    href: "https://cal.com/theawaisahmadkhan/ttinit-onboarding-demo",
   },
 
   {
@@ -29,8 +29,8 @@ const data = [
     heading: "WhatsApp Live Support",
     description:
       "For immediate assistance, you can reach out to us via WhatsApp.",
-    link: "+92 306 6423521",
-    secondIcon: phone,
+    link: "Chat Now",
+
     chat: "Chat Now",
     href: "https://wa.me/+923066423521",
   },

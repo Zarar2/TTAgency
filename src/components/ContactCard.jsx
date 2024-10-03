@@ -17,8 +17,8 @@ export default function ContactCard({
       <h1 className={styles.heading}>{heading}</h1>
       <div className={styles.details}>
         <p className={styles.description}>{description}</p>
-        {chat && <p className={styles.chatLink}>Chat now</p>}
-        <a href={href} className={styles.link}>
+
+        <a target="_blank" href={href} className={styles.link}>
           <span>
             {secondIcon && <img className={styles.phone} src={secondIcon} />}
           </span>

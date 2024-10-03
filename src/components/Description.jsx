@@ -6,17 +6,16 @@ export default function Description() {
       <h1>Packages</h1>
       <div className={styles.content}>
         <p>
-          We realize that there is no “one size fits all” approach when it comes
-          to what a marketing agency can offer you.
+          We understand that a “one size fits all” approach doesn’t work when it
+          comes to marketing. Your business is unique, and as it grows, so
+          should your marketing strategy.
         </p>
+        <p>As you scale your business your marketing strategy will scale too</p>
         <p>
-          As you scale your business your marketing strategy will scale too.{" "}
-        </p>
-        <p>
-          Our packages are designed to provide you with proven services and
-          experts for each marketing function of your business. Our goal is to
-          support your team's impact to expand revenue and profitability
-          exponentially.
+          Our packages are crafted to provide you with customized,
+          results-driven services and expert guidance for every aspect of your
+          marketing. We’re here to empower your team, helping you scale
+          effectively and boost both revenue and profitability to new heights.
         </p>
       </div>
     </div>

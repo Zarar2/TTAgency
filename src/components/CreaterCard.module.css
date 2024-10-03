@@ -1,6 +1,30 @@
 .createrCardsList {
   width: 80%;
   margin: auto;
+  overflow-x: hidden;
+}
+.name {
+  font-size: 12px !important;
+  color: grey;
+}
+.indicator {
+  display: block !important;
+  margin: auto !important;
+}
+.loading {
+  text-align: center;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+.category {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.category span {
+  font-weight: 500;
 }
 .profile {
   width: 50px;

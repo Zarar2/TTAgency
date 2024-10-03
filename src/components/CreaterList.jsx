@@ -3,60 +3,64 @@ import {
   Table,
   TableBody,
   TableHead,
+  TableCell,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import CircularProgress from "@mui/material/CircularProgress";
 
 import styles from "./CreaterCard.module.css";
-
-const creators = [
-  {
-    name: "lolardz527",
-    profilePic: "https://example.com/pic1.jpg",
-    category: "Health, +2",
-    followers: "9.7K, Female 61%, 35-44",
-    gmv: "$5,365.67",
-    itemsSold: 261,
-    avgViews: 407,
-    engagementRate: 4.0,
-    isFastGrowing: true,
-  },
-  {
-    name: "ceciliarun",
-    profilePic: "https://example.com/pic2.jpg",
-    category: "Beauty & Personal Care, +2",
-    followers: "15.5K, Female 72%, 25-34",
-    gmv: "$764.75",
-    itemsSold: 32,
-    avgViews: 1200,
-    engagementRate: 3.8,
-    isFastGrowing: false,
-  },
-  {
-    name: "ceciliarun",
-    profilePic: "https://example.com/pic2.jpg",
-    category: "Beauty & Personal Care, +2",
-    followers: "15.5K, Female 72%, 25-34",
-    gmv: "$764.75",
-    itemsSold: 32,
-    avgViews: 1200,
-    engagementRate: 3.8,
-    isFastGrowing: true,
-  },
-  {
-    name: "ceciliarun",
-    profilePic: "https://example.com/pic2.jpg",
-    category: "Beauty & Personal Care, +2",
-    followers: "15.5K, Female 72%, 25-34",
-    gmv: "$764.75",
-    itemsSold: 32,
-    avgViews: 1200,
-    engagementRate: 3.8,
-    isFastGrowing: true,
-  },
-];
+import { useEffect, useState } from "react";
 
 export default function CreaterList() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [offset, setOffset] = useState(1);
+
+  const fetchData = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch(
+        `https://ttinit-api-54ffa078f75c.herokuapp.com/all_users/?page=${offset}&size=23`
+      );
+
+      if (!response.ok) throw new Error("Network response was not ok");
+      const results = await response.json();
+      const newData = results.results;
+
+      setData((prev) => [...prev, ...newData]);
+      setLoading(false);
+    } catch (error) {
+      setError(error);
+      setLoading(false);
+    }
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, [offset]);
+
+  useEffect(() => {
+    const handleScroll = (e) => {
+      const scrollHeight = e.target.documentElement.scrollHeight;
+      const currentHeight =
+        e.target.documentElement.scrollTop + window.innerHeight;
+
+      console.log(scrollHeight, currentHeight);
+
+      if (currentHeight + 1 >= scrollHeight - 100 && offset) {
+        setOffset((offset) => offset + 1);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [offset]);
+
+  const results = data;
+
+  console.log(results);
   return (
     <div className={styles.tableContainer}>
       <Table className={styles.table}>
@@ -69,10 +73,16 @@ export default function CreaterList() {
             <TableHead className={styles.tableHead}>Engagement Rate</TableHead>
           </TableRow>
         </TableHeader>
-        <TableBody>
-          {creators.map((creator, index) => (
-            <CreatorCard key={index} creator={creator} />
-          ))}
+        <TableBody className={styles.tableBody}>
+          {results &&
+            results.map((creator, index) => (
+              <CreatorCard key={index} creator={creator} />
+            ))}
+          {loading && (
+            <TableCell colspan={5}>
+              <CircularProgress color="inherit" className={styles.indicator} />
+            </TableCell>
+          )}
         </TableBody>
       </Table>
     </div>

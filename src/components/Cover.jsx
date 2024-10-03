@@ -23,51 +23,55 @@ export default function Cover() {
         </div>
 
         <div className={styles.sections}>
-          <h3 className={styles.heading}>Agencies Suck</h3>
-          <p>"But wait... aren't you guys an an agency?"</p>
+          <h3 className={styles.heading}>
+            Why Most Agencies <br /> Fall Short
+          </h3>
+          <p>"But hold on... aren't you an agency too?"</p>
           <p>
-            We are - but we're <strong> BRAND OWNERS</strong> first.
+            Yes, we are – but we're <strong> BRAND OWNERS</strong> first and
+            foremost.
           </p>
           <p>
-            And over the years we worked with a lot of agencies and these were
-            the 3 things that drove us crazy.
+            After years of collaborating with various agencies, we discovered
+            three major frustrations that many clients share.
           </p>
 
           <div className={styles.accordian}>
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger>
-                  1. Agencies move too slow (1 month on-boarding's anyone??)
+                  1. Agencies Move Too Slowly (Endless Onboarding, Anyone?)
                 </AccordionTrigger>
                 <AccordionContent>
-                  Have you ever had the most responsive sales experience then
-                  pay your first invoice and it's crickets... ya we know your
-                  pain. That's why we get started the day that you sign your
-                  contract.
+                  Ever experienced an ultra-responsive sales process, only for
+                  things to slow down to a crawl after the first payment? We've
+                  been there too. That’s why at our agency, the moment you sign
+                  your contract, we hit the ground running – no time wasted.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2">
                 <AccordionTrigger>
-                  2. Agencies over-promise and under-deliver
+                  2. Over-Promising, Under-Delivering
                 </AccordionTrigger>
                 <AccordionContent>
-                  We know... you've been promised "we'll double your sales" so
-                  many times only to have results stay the same. We get that -
-                  we give a roadmap to results and show you the incremental
-                  actions that we are going to make to get there.
+                  We understand how it feels to be sold on unrealistic promises
+                  like "we'll double your sales" only to see little to no
+                  progress. Instead, we provide a clear, actionable roadmap from
+                  day one, showing you exactly how we’ll drive results step by
+                  step.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-3">
                 <AccordionTrigger>
-                  3. Agencies don't communicate until it's too late
+                  3. Poor Communication Until It’s Too Late
                 </AccordionTrigger>
                 <AccordionContent>
-                  We've waited 5 days to hear back from agencies that we've
-                  worked with on an issue that REALLY mattered to us. At
-                  upGrowth we have shared slack channels and our goal is to get
-                  back to you QUICK when issues arise!
+                  Ever waited days for a critical response? We've felt that
+                  frustration too. That’s why, at upGrowth, we prioritize
+                  real-time communication through shared Slack channels. When
+                  something matters, we're there – fast.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
