@@ -73,7 +73,7 @@ export default function CreaterCard({ creator }) {
                 {bio_data?.follower_count}
                 {followers_data?.gender && ", Female "}
                 {followers_data?.gender?.followers_by_gender?.Female}
-                {", " + maxPerAge}
+                {maxPerAge && ", " + maxPerAge}
               </span>
             </div>
           </div>

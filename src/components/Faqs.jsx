@@ -60,6 +60,12 @@ export default function Faqs() {
             </h1>
           </strong>
         </p>
+
+        <p>
+          <strong>
+            <h1 className={styles.secondaryHeading}>Here’s the brands stats</h1>
+          </strong>
+        </p>
       </div>
     </div>
   );

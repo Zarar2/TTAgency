@@ -1,11 +1,11 @@
-import ContactUs from "../components/ContactUs";
+import BlogsSection from "../components/BlogsSection";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-export default function Contact() {
+export default function CaseStudies() {
   return (
     <>
-      <ContactUs />
+      <BlogsSection />
     </>
   );
 }

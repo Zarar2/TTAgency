@@ -12,7 +12,6 @@ export default function Landing() {
       {/* <Testimonial /> */}
       <Partners />
       <Stats />
-      <Footer />
     </>
   );
 }

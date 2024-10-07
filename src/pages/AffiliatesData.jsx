@@ -5,9 +5,7 @@ import Header from "../components/Header";
 export default function AffiliatesData() {
   return (
     <div>
-      <Header />
       <DataList />
-      <Footer />
     </div>
   );
 }

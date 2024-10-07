@@ -6,10 +6,8 @@ import WhoWeAre from "../components/WhoWeAre";
 export default function AboutUs() {
   return (
     <>
-      <Header />
       <WhoWeAre />
       <ServicesOffering />
-      <Footer />
     </>
   );
 }

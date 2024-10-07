@@ -1,0 +1,21 @@
+.container {
+  padding: 25px;
+  width: 80%;
+  margin: auto;
+}
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+.blogContainer {
+  padding: 25px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.blogContainer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

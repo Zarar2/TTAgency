@@ -15,21 +15,33 @@ import { useEffect, useState } from "react";
 export default function CreaterList() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [hasMoreData, setHasMoreData] = useState(true);
   const [error, setError] = useState(null);
   const [offset, setOffset] = useState(1);
 
   const fetchData = async () => {
     setLoading(true);
+
     try {
       const response = await fetch(
-        `https://ttinit-api-54ffa078f75c.herokuapp.com/all_users/?page=${offset}&size=23`
+        `https://ttinit-api-54ffa078f75c.herokuapp.com/all_users/?page=${offset}&size=100`
       );
 
       if (!response.ok) throw new Error("Network response was not ok");
       const results = await response.json();
-      const newData = results.results;
 
-      setData((prev) => [...prev, ...newData]);
+      const newData = results.results.filter(
+        (user) => user?.sales_data?.gmv_numeric?.[0] > 10000
+      );
+
+      if (newData.length === 0 && results.results.length > 0) {
+        setOffset((prev) => prev + 1);
+      } else if (results.results.length === 0) {
+        setHasMoreData(false);
+      } else {
+        setData((prev) => [...prev, ...newData]);
+      }
+
       setLoading(false);
     } catch (error) {
       setError(error);
@@ -39,8 +51,10 @@ export default function CreaterList() {
   };
 
   useEffect(() => {
-    fetchData();
-  }, [offset]);
+    if (hasMoreData) {
+      fetchData();
+    }
+  }, [offset, hasMoreData]);
 
   useEffect(() => {
     const handleScroll = (e) => {
@@ -48,9 +62,7 @@ export default function CreaterList() {
       const currentHeight =
         e.target.documentElement.scrollTop + window.innerHeight;
 
-      console.log(scrollHeight, currentHeight);
-
-      if (currentHeight + 1 >= scrollHeight - 100 && offset) {
+      if (currentHeight + 1 >= scrollHeight - 100 && hasMoreData) {
         setOffset((offset) => offset + 1);
       }
     };
@@ -60,7 +72,6 @@ export default function CreaterList() {
 
   const results = data;
 
-  console.log(results);
   return (
     <div className={styles.tableContainer}>
       <Table className={styles.table}>
@@ -79,7 +90,7 @@ export default function CreaterList() {
               <CreatorCard key={index} creator={creator} />
             ))}
           {loading && (
-            <TableCell colspan={5}>
+            <TableCell colSpan={5}>
               <CircularProgress color="inherit" className={styles.indicator} />
             </TableCell>
           )}
