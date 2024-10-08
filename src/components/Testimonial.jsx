@@ -1,79 +1,134 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
+import { useState } from "react";
+import Slider from "react-slick";
 import styles from "./Testimonial.module.css";
-import jhon from "../assets/testimonials/John+Roman+BattlBox.jpg";
-import Nick from "../assets/testimonials/Nick+Lamothe-100.jpg";
-import Ed from "../assets/testimonials/Ed+Mileto-100.jpg";
-import Collin from "../assets/testimonials/Colin+Dougherty.jpg";
+import "./Testimonials.css";
+const testimonialList = [
+  {
+    photo:
+      "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_19.png",
+    name: "John Coates",
+    position: "Content Writer",
+    from: "UK",
+    content:
+      '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus magni tempore provident? Quaerat, dicta saepe praesentium eaque nobis corrupti aut, quibusdam provident consequatur."',
+  },
+  {
+    photo:
+      "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_19.png",
+    name: "Ellica Perry",
+    position: "Project Manager",
+    from: "BD",
+    content:
+      '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus magni tempore provident? Quaerat, dicta saepe praesentium eaque nobis corrupti aut, quibusdam provident consequatur."',
+  },
+];
 
-export default function Testimonial() {
+const Testimonial = () => {
+  const [index, setIndex] = useState(0);
+  const { photo, name, position, content, from } = testimonialList[index];
+
+  console.log(testimonialList[0]);
+  let settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <div className={styles.container}>
-      <Carousel>
-        <CarouselContent>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-            <div className={styles.testimonials}>
-              <div className={styles.profiles}>
-                <img src={jhon} alt="" />
+      <Slider {...settings}>
+        <section className="ezy__testimonial19 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative z-[1]">
+          <div className="container px-4 mx-auto relative">
+            <div>
+              <div className="grid grid-cols-12 gap-y-6 md:gap-y-0 md:gap-x-6">
+                <div className="col-span-12 md:col-span-6 md:col-start-2 relative">
+                  <div className="flex justify-center items-center h-full">
+                    <div>
+                      <div
+                        className={`bg-white shadow-xl dark:bg-slate-800 rounded-xl z-10 relative py-14 px-9 md:py-20 md:px-12 md:-mr-24 ${styles.card}`}
+                      >
+                        <p className="mb-6 opacity-80">{content}</p>
+                        <h5 className="text-[19px] font-medium">
+                          -{name}, {position}, {from}
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-12 md:col-span-4 text-center md:text-start">
+                  <div className="flex items-center justify-center h-full">
+                    <img
+                      src={photo}
+                      alt={name}
+                      className="lg:w-full rounded-xl -z-[1] mx-auto"
+                    />
+                  </div>
+                </div>
               </div>
-              <h2 className={styles.heading}>
-                Up Growth always has their pulse on bleeding-edge marketing
-                tactics and they are always willing to share openly!
-              </h2>
-              <p>John Roman - Battlbox</p>
             </div>
-          </CarouselItem>
-
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-            <div className={styles.testimonials}>
-              <div className={styles.profiles}>
-                <img src={Nick} alt="" />
+          </div>
+        </section>
+        <section className="ezy__testimonial19 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative z-[1]">
+          <div className="container px-4 mx-auto relative">
+            <div>
+              <div className="grid grid-cols-12 gap-y-6 md:gap-y-0 md:gap-x-6">
+                <div className="col-span-12 md:col-span-6 md:col-start-2 relative">
+                  <div className="flex justify-center items-center h-full">
+                    <div>
+                      <div className="bg-white shadow-xl dark:bg-slate-800 rounded-xl z-10 relative py-14 px-9 md:py-20 md:px-12 md:-mr-24">
+                        <p className="mb-6 opacity-80">"{content}"</p>
+                        <h5 className="text-[19px] font-medium">
+                          -{name}, {position}, {from}
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-12 md:col-span-4 text-center md:text-start">
+                  <div className="flex items-center justify-center h-full">
+                    <img
+                      src={photo}
+                      alt={name}
+                      className="lg:w-full rounded-xl -z-[1] mx-auto"
+                    />
+                  </div>
+                </div>
               </div>
-              <h2 className={styles.heading}>
-                UpGrowth brings the perfect balance of optimization and
-                innovation; knowing how to profitably and incrementally improve
-                the basic tried-and-true channels and tactics, while leaning in
-                to, and being an early adopter /tester of emerging trends and
-                out-of-the-box thinking
-              </h2>
-              <p>Nick Lamothe</p>
             </div>
-          </CarouselItem>
-
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-            <div className={styles.testimonials}>
-              <div className={styles.profiles}>
-                <img src={Collin} alt="" />
+          </div>
+        </section>
+        <section className="ezy__testimonial19 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative z-[1]">
+          <div className="container px-4 mx-auto relative">
+            <div>
+              <div className="grid grid-cols-12 gap-y-6 md:gap-y-0 md:gap-x-6">
+                <div className="col-span-12 md:col-span-6 md:col-start-2 relative">
+                  <div className="flex justify-center items-center h-full">
+                    <div>
+                      <div className="bg-white shadow-xl dark:bg-slate-800 rounded-xl z-10 relative py-14 px-9 md:py-20 md:px-12 md:-mr-24">
+                        <p className="mb-6 opacity-80">{content}</p>
+                        <h5 className="text-[19px] font-medium">
+                          -{name}, {position}, {from}
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-12 md:col-span-4 text-center md:text-start">
+                  <div className="flex items-center justify-center h-full">
+                    <img
+                      src={photo}
+                      alt={name}
+                      className="lg:w-full rounded-xl -z-[1] mx-auto"
+                    />
+                  </div>
+                </div>
               </div>
-              <h2 className={styles.heading}>
-                “Our Results TRIPLED overnight after implementing their tactics.
-                These guys are no joke at upGrowth Commerce!”
-              </h2>
-              <p>- Colin Dougherty - Founder of Camskns</p>
             </div>
-          </CarouselItem>
-
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-            <div className={styles.testimonials}>
-              <div className={styles.profiles}>
-                <img src={Ed} alt="" />
-              </div>
-              <h2 className={styles.heading}>
-                "upGrowth has been an incredible resource in helping scale my
-                brand. He also always has his finger on the pulse of the ecomm
-                world"
-              </h2>
-              <p>Ed Mileto NBT clothing</p>
-            </div>
-          </CarouselItem>
-        </CarouselContent>
-      </Carousel>
+          </div>
+        </section>
+      </Slider>
     </div>
   );
-}
+};
+export default Testimonial;

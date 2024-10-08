@@ -10,11 +10,7 @@ import { Link } from "react-router-dom";
 export default function BlogCard({ writer }) {
   const { title, featured_image, subtitle } = writer;
 
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/blogs", { state: { message: "Hello from Landing" } });
-  };
+  console.log(writer);
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -35,7 +31,9 @@ export default function BlogCard({ writer }) {
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          <Link to="blog">Read More</Link>
+          <Link to="blog" state={{ writer }}>
+            Read More
+          </Link>
         </Button>
       </CardActions>
     </Card>

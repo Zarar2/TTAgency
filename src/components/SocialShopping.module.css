@@ -1,0 +1,49 @@
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.cardBanner {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.cardBanner:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+.mainHeading {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 16px 0;
+  color: #525252;
+  text-transform: uppercase;
+}
+.mainDescriptiom {
+  font-size: 19px;
+  color: #525252;
+  font-weight: 700;
+  margin: 24px 0;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  padding: 25px 0 75px 0;
+}
+.secondaryHeading {
+  font-size: 26px;
+  color: #525252;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+.secondaryDescription {
+  font-size: 17px;
+  font-weight: 500;
+  color: #525252;
+}

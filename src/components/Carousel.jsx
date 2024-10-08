@@ -8,11 +8,7 @@ export default function Carroussel(props) {
     return {
       ...element,
       onClick: () => {
-        if (index > count.current) {
-          count.current += 1;
-        } else {
-          count.current -= 1;
-        }
+        count.current = index;
         setGoToSlide(index);
       },
     };
@@ -37,7 +33,6 @@ export default function Carroussel(props) {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      console.log(count.current, cards.length);
       if (count.current > props.cards.length - 1) {
         count.current = 0;
         setGoToSlide(0);
@@ -59,7 +54,9 @@ export default function Carroussel(props) {
       className={styles.carouselContainer}
       style={{ width: props.width, height: props.height, margin: props.margin }}
     >
-      <p className={styles.sales}>{`${month} Month Sales`}</p>
+      <p className={styles.sales}>{`${
+        month == "7th" ? " 1st " : month
+      } Month Sales`}</p>
       <Carousel
         slides={cards}
         goToSlide={goToSlide}

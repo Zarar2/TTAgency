@@ -1,31 +1,56 @@
 import { useState } from "react";
+
 import styles from "./ModalContact.module.css";
 import Button from "./Button";
 import "./ModalContact.css";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Snackbar from "@mui/material/Snackbar";
 
-export default function ModalContact() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+export default function ModalContact({ isModalOpen, setIsModalOpen }) {
+  const [open, setOpen] = useState(false);
+
   const [name, setName] = useState("");
   const [number, setNumber] = useState();
   const [email, setEmail] = useState("");
   const [affiliateMarketing, setAffiliateMarketing] = useState("meta");
   const [message, setMessage] = useState("");
+  const form = useRef();
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(name, number, email, message, affiliateMarketing);
     setIsModalOpen(false);
     setName("");
     setNumber("");
     setEmail("");
     setAffiliateMarketing("meta");
     setMessage("");
+
+    emailjs
+      .sendForm("service_0agi5sj", "template_jn3w4o3", form.current, {
+        publicKey: "6ZI7pbZXUlOoTp4e2",
+      })
+      .then(
+        () => {
+          setOpen(true);
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   return (
-    <div>
-      <Button onClick={() => setIsModalOpen(true)}>CONTACT</Button>
+    <>
       {isModalOpen && (
         <div className={styles["modal-overlay"]}>
           <div className={styles["modal-content"]}>
@@ -36,7 +61,12 @@ export default function ModalContact() {
               X
             </span>
             <section className="formcarry-container">
-              <form action="#" method="POST" encType="multipart/form-data">
+              <form
+                ref={form}
+                action="#"
+                method="POST"
+                encType="multipart/form-data"
+              >
                 <div className="formcarry-block">
                   <label htmlFor="fc-generated-1-name">Full Name</label>
                   <input
@@ -69,7 +99,7 @@ export default function ModalContact() {
                     value={number}
                     onChange={(e) => setNumber(e.target.value)}
                     type="text"
-                    name="name"
+                    name="number"
                     id="fc-generated-1-name"
                     placeholder="Your Number"
                   />
@@ -93,7 +123,7 @@ export default function ModalContact() {
                   </label>
                   <select
                     required
-                    name=""
+                    name="affiliateMarketing"
                     id="AffiliateMarketing"
                     value={affiliateMarketing}
                     onChange={(e) => setAffiliateMarketing(e.target.value)}
@@ -110,48 +140,18 @@ export default function ModalContact() {
                     Send
                   </button>
                 </div>
-
-                {/* <div className={styles["form-group"]}>
-                <label>Select Affiliate Marketing</label>
-
-                <div className={styles.input}>
-                <select
-                className={styles["form-field"]}
-                    required
-                    name=""
-                    id="AffiliateMarketing"
-                    value={affiliateMarketing}
-                    onChange={(e) => setAffiliateMarketing(e.target.value)}
-                    >
-                    <option value="Instagram">Instgaram</option>
-                    <option value="Meta">Meta</option>
-
-                    <option value="Twitter">Twitter</option>
-                    </select>
-                    </div>
-                    </div> */}
-                {/* <div className={styles.buttonContainer}>
-                <Button type="secondary" onClick={handleSubmit}>
-                  SUBMIT
-                  </Button>
-                  </div> */}
               </form>
             </section>
           </div>
         </div>
       )}
-    </div>
+
+      <Snackbar
+        open={open}
+        autoHideDuration={3000}
+        onClose={handleClose}
+        message="SUCCESS!"
+      />
+    </>
   );
-}
-
-{
-  /* <form action="#" method="POST" enctype="multipart/form-data">
-
-
-
-
-<div class="formcarry-block">
-  <button type="submit">Send</button>
-</div>
-</form> */
 }

@@ -1,0 +1,14 @@
+.border-input {
+  border-color: transparent !important;
+  background-color: transparent !important;
+}
+.nav-links li {
+  margin: 10px 0;
+}
+.nav-links li a:hover {
+  color: aqua;
+}
+.hamburger-button:focus {
+  outline: 2px solid #c94e50;
+  outline-offset: 8px;
+}
