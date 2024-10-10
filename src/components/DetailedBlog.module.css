@@ -22,3 +22,44 @@
   font-size: 17px;
   margin: 15px 0;
 }
+
+@media (max-width: 1024px) {
+  .mainHeading {
+    font-size: 32px;
+    margin: 0px 0 22px;
+  }
+
+  .content h1 {
+    font-size: 22px;
+    margin: 16px 0;
+    font-weight: 600;
+  }
+
+  .content p {
+    font-size: 16px;
+    margin: 13px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 75px;
+  }
+  .mainHeading {
+    font-size: 26px;
+    margin: 0px 0 18px;
+  }
+
+  .content h1 {
+    font-size: 18px;
+    margin: 16px 0;
+    font-weight: 600;
+  }
+
+  .content p {
+    font-size: 16px;
+    margin: 13px 0;
+  }
+}

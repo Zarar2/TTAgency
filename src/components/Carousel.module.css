@@ -12,4 +12,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .carouselContainer {
+    height: 300px !important;
+  }
+
+  .sales {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carouselContainer {
+    height: 200px !important;
+
+    overflow: hidden;
+    width: 100%;
+
+    margin: 0px auto;
+  }
+
+  .sales {
+    font-size: 14px;
+    padding: 2px 8px;
+  }
 }

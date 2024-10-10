@@ -110,3 +110,59 @@
 .phone {
   margin-bottom: -5px;
 }
+
+@media (max-width: 1024px) {
+  .mainHeading {
+    font-size: 42px;
+    margin-top: -25px;
+  }
+
+  .cardContainer {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 50px;
+    gap: 20px;
+  }
+  .message {
+    padding-top: 25px;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainHeading {
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 36px;
+  }
+
+  .icon {
+    margin-bottom: 24px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .description {
+    font-size: 15px;
+    color: #69696b;
+    margin-bottom: 20px;
+  }
+
+  .cardContainer {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 35px;
+    gap: 25px;
+    grid-column-gap: 50px;
+  }
+  .message {
+    padding-top: 25px;
+    width: 80%;
+    margin: auto;
+  }
+}

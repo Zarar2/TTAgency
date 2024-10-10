@@ -6,10 +6,43 @@
   display: none;
 }
 .container {
-  width: 80%;
+  width: 90%;
   padding: 50px 0;
   margin: auto;
 }
-.card {
-  width: 675px;
+.testimonial-card {
+  margin-right: -6rem;
+}
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    padding-left: 2rem !important;
+    padding-right: 1rem !important;
+    margin-right: -3rem !important;
+  }
+  .testimonial-card h5 {
+    font-size: 16px !important;
+  }
+
+  .ezy__testimonial19 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    width: 80%;
+    padding: 50px 0;
+    margin: auto;
+  }
+
+  .testimonial-card {
+    adding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin-right: 0rem !important;
+  }
 }

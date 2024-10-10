@@ -34,3 +34,50 @@
 .secondaryHeading {
   font-size: 24px;
 }
+
+@media (max-width: 768px) {
+  .faqs .heading {
+    font-size: 46px;
+    font-weight: 600;
+  }
+  .description p {
+    font-size: 16px;
+    margin: 15px 0px;
+  }
+  .description {
+    width: 90%;
+  }
+
+  .faqs {
+    color: #525252;
+
+    padding: 35px 100px;
+    text-align: center;
+  }
+
+  .secondaryHeading {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 576px) {
+  .faqs {
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+  }
+  .faqs .heading {
+    font-size: 26px;
+  }
+
+  .description {
+    width: 100%;
+    margin: auto;
+  }
+
+  .description p {
+    margin: auto;
+    margin: 10px 0px;
+  }
+}

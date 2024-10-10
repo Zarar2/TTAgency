@@ -7,3 +7,22 @@
 .slick-prev {
   left: -36px !important;
 }
+@media (max-width: 768px) {
+  .ezy__testimonial19 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 26px !important;
+    color: #00000057 !important;
+  }
+
+  .ezy__testimonial19 {
+    padding-top: 0rem !important;
+    padding-bottom: 1rem !important;
+  }
+}

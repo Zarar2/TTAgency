@@ -45,3 +45,18 @@
   color: black;
   font-weight: 600;
 }
+
+@media (max-width: 576px) {
+  .primaryButton a,
+  .secondaryButton a {
+    letter-spacing: 0.2rem;
+    position: relative;
+    color: white;
+    color: black;
+    font-weight: 600;
+  }
+  .primaryButton,
+  .secondaryButton {
+    padding: 10px 20px;
+  }
+}

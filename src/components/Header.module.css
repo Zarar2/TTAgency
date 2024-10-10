@@ -4,3 +4,34 @@
   margin: 0 25px;
   padding: 25px 0 75px 0;
 }
+@media (max-width: 769px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px;
+    padding: 25px 0 40px 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px;
+    padding: 25px 0 40px 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px;
+    padding: 25px 0 40px 0;
+  }
+}
+@media (max-width: 576px) {
+  .heade Button {
+    height: 1.5rem !important;
+  }
+}

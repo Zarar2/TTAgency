@@ -18,3 +18,27 @@
 
   gap: 10px;
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 35px 0;
+  }
+
+  .section ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 32px;
+    color: #525252;
+    margin-bottom: 45px;
+  }
+  .section {
+    width: 90%;
+    padding: 35px 0;
+  }
+}

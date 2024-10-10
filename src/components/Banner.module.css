@@ -4,3 +4,12 @@
   padding: 160px 0 50px;
   margin-top: -160px;
 }
+
+@media (max-width: 576px) {
+  .banner {
+    background-color: #e5e4e2;
+    border-radius: 0 0 150px 0;
+    padding: 140px 0 35px;
+    margin-top: -160px;
+  }
+}

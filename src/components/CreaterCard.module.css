@@ -72,3 +72,11 @@
   border: 1px solid rgb(0, 0, 0, 0.4);
   border-radius: 5px;
 }
+
+@media (max-width: 1024px) {
+  .createrCardsList {
+    width: 90%;
+    margin: auto;
+    overflow-x: auto;
+  }
+}

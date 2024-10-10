@@ -2,6 +2,7 @@ import { useState } from "react";
 import Slider from "react-slick";
 import styles from "./Testimonial.module.css";
 import "./Testimonials.css";
+
 const testimonialList = [
   {
     photo:
@@ -46,7 +47,7 @@ const Testimonial = () => {
                   <div className="flex justify-center items-center h-full">
                     <div>
                       <div
-                        className={`bg-white shadow-xl dark:bg-slate-800 rounded-xl z-10 relative py-14 px-9 md:py-20 md:px-12 md:-mr-24 ${styles.card}`}
+                        className={`${styles["testimonial-card"]} bg-white shadow-xl dark:bg-slate-800 rounded-xl z-10 relative py-14 px-9 md:py-20 md:px-12 md:-mr-24 `}
                       >
                         <p className="mb-6 opacity-80">{content}</p>
                         <h5 className="text-[19px] font-medium">
@@ -69,6 +70,7 @@ const Testimonial = () => {
             </div>
           </div>
         </section>
+
         <section className="ezy__testimonial19 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative z-[1]">
           <div className="container px-4 mx-auto relative">
             <div>
@@ -76,7 +78,9 @@ const Testimonial = () => {
                 <div className="col-span-12 md:col-span-6 md:col-start-2 relative">
                   <div className="flex justify-center items-center h-full">
                     <div>
-                      <div className="bg-white shadow-xl dark:bg-slate-800 rounded-xl z-10 relative py-14 px-9 md:py-20 md:px-12 md:-mr-24">
+                      <div
+                        className={`${styles["testimonial-card"]} bg-white shadow-xl dark:bg-slate-800 rounded-xl z-10 relative py-14 px-9 md:py-20 md:px-12 md:-mr-24`}
+                      >
                         <p className="mb-6 opacity-80">"{content}"</p>
                         <h5 className="text-[19px] font-medium">
                           -{name}, {position}, {from}
@@ -105,7 +109,9 @@ const Testimonial = () => {
                 <div className="col-span-12 md:col-span-6 md:col-start-2 relative">
                   <div className="flex justify-center items-center h-full">
                     <div>
-                      <div className="bg-white shadow-xl dark:bg-slate-800 rounded-xl z-10 relative py-14 px-9 md:py-20 md:px-12 md:-mr-24">
+                      <div
+                        className={`${styles["testimonial-card"]} bg-white shadow-xl dark:bg-slate-800 rounded-xl z-10 relative py-14 px-9 md:py-20 md:px-12 md:-mr-24`}
+                      >
                         <p className="mb-6 opacity-80">{content}</p>
                         <h5 className="text-[19px] font-medium">
                           -{name}, {position}, {from}

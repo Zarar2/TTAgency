@@ -13,16 +13,14 @@ export default function Cover() {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.sections + "border-r-4"}>
+        <div className={styles.sections + " " + styles.videoPlayer}>
           <ReactPlayer
             url="https://upgrowthcommerce.com/fd80c008-4740-482b-9344-139e36b4e507"
             controls={true}
-            width={"400px"}
-            height={"500px"}
           />
         </div>
 
-        <div className={styles.sections}>
+        <div className={styles.sections + " " + styles.bannerContent}>
           <h3 className={styles.heading}>
             Why Most Agencies <br /> Fall Short
           </h3>

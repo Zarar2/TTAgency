@@ -24,3 +24,51 @@
 .mainPoints .description {
   font-size: 17px;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 25px;
+  }
+
+  .bulletsContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    gap: 25px;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .mainPoints {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bulletsContainer {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 25px;
+    padding: 35px 25px;
+  }
+  .bulletsContainer .banner {
+    order: 1;
+  }
+
+  .bulletsContainer .mainPoints {
+    order: 2;
+  }
+
+  .mainPoints .heading {
+    font-size: 22px;
+    margin: 15px 0;
+    font-weight: 600;
+  }
+
+  .mainPoints .description {
+    font-size: 16px;
+  }
+}

@@ -47,3 +47,48 @@
   font-weight: 500;
   color: #525252;
 }
+
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 42px;
+  }
+  .mainDescriptiom {
+    font-size: 17px;
+  }
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px 0 50px 0;
+  }
+
+  .secondaryHeading {
+    font-size: 24px;
+  }
+
+  .secondaryDescription {
+    font-size: 16px;
+    font-weight: 500;
+    color: #525252;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainHeading {
+    font-size: 30px;
+  }
+
+  .mainDescriptiom {
+    font-size: 16px;
+    margin: 17px 0;
+  }
+
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+    padding: 25px 0 50px 0;
+  }
+
+  .secondaryHeading {
+    margin-bottom: 10px;
+  }
+}

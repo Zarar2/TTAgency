@@ -3,3 +3,17 @@
   margin: auto;
   margin-bottom: 75px;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 1576px) {
+  .container {
+  }
+}

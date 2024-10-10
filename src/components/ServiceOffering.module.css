@@ -18,3 +18,39 @@
   width: 50%;
   margin: auto;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 75px;
+  }
+
+  .heading {
+    font-size: 32px;
+    font-weight: 500;
+    margin: auto;
+    text-align: center;
+    margin: 25px;
+  }
+
+  .container table {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+
+  .heading {
+    font-size: 28px;
+    margin: 15px 25px;
+    font-weight: 600;
+  }
+}
