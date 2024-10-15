@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.container}>
       <div className={styles.footer}>
         <div className={styles.footerLogo}>
-          <Logo />
+          <Logo footer="foot_logo" />
           <div className={styles.socialIcons}>
             <a href="#!" role="button">
               {/* <!-- Facebook --> */}
@@ -105,7 +105,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <p className={styles.copyright}>Copyright © 2024 upgrowth commerce</p>
+      <p className={styles.copyright}>Copyright © 2024 TTAfinity</p>
     </footer>
   );
 }

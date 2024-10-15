@@ -1,12 +1,18 @@
 .logo {
   width: auto;
   max-width: 100%;
-  max-height: 60px;
+
+  max-height: 75px;
+  margin-left: 20px;
+}
+
+.foot_logo {
+  margin-left: -20px;
 }
 @media (max-width: 769px) {
   .logo {
     width: auto;
     max-width: 100%;
-    max-height: 30px;
+    max-height: 40px;
   }
 }
