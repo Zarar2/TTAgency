@@ -5,7 +5,12 @@ export default function PriceButton() {
     <div className={styles.parent}>
       <div className={styles.shadow}>
         <span className={styles.button}>
-          <a href="">Get started</a>
+          <a
+            target="_blank"
+            href="https://cal.com/theawaisahmadkhan/ttinit-onboarding-demo"
+          >
+            Get started
+          </a>
         </span>
       </div>
     </div>
