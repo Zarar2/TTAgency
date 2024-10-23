@@ -1,6 +1,7 @@
 .faqs {
   color: #525252;
 
+  position: relative;
   padding: 65px;
   text-align: center;
 }
@@ -33,6 +34,80 @@
 }
 .secondaryHeading {
   font-size: 24px;
+}
+
+.faqCardContainer {
+  display: grid;
+
+  padding: 25px 0;
+  position: relative; /* Optional if you have other positioned elements */
+  width: 100%; /* Full viewport width */
+  left: 50%; /* Move it to the center horizontally */
+  transform: translateX(-50%);
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+.faqCard {
+  position: relative;
+  border: 1px solid #eaeaea;
+}
+
+.faqCard > div {
+  min-height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center !important;
+  overflow: hidden;
+}
+
+.faqCard > div h3 {
+  display: flex;
+  text-align: center;
+
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+  transition: 0.3s;
+  padding: 0;
+  margin: 0;
+}
+
+.faqCard > div:hover .hoverDiv {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0%);
+}
+
+.faqCard > div .hoverDiv p {
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+.faqCard > div .hoverDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #34b6f8;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: "";
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding: 25px 45px;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0px, 10px);
 }
 
 @media (max-width: 768px) {

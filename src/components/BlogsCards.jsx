@@ -30,11 +30,11 @@ export default function BlogsCards() {
       <div className={styles.container}>
         <h1 className={styles.heading}>Main Blogs</h1>
         <div className={styles.blogContainer}>
-          {data &&
+          {/* {data &&
             data.map((writer) => <BlogCard writer={writer} key={writer.id} />)}
           {loading && (
             <CircularProgress color="inherit" className={styles.indicator} />
-          )}
+          )} */}
         </div>
       </div>
     </>

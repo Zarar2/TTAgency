@@ -6,18 +6,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-import ReactPlayer from "react-player";
+import Lottie from "lottie-react";
+import phone from "../assets/phone-animation.json";
 
 export default function Cover() {
   return (
     <>
       <div className={styles.container}>
         <div className={styles.sections + " " + styles.videoPlayer}>
-          <ReactPlayer
-            url="https://upgrowthcommerce.com/fd80c008-4740-482b-9344-139e36b4e507"
-            controls={true}
-          />
+          <Lottie animationData={phone} />
         </div>
 
         <div className={styles.sections + " " + styles.bannerContent}>

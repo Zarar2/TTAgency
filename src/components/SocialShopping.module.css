@@ -1,15 +1,50 @@
 .container {
-  width: 80%;
+  width: 60%;
   margin: auto;
   text-align: center;
+}
+.vid_heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 16px 0;
+  color: #525252;
+  text-transform: uppercase;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.cardsContainer .card:nth-child(even) .cardDescription {
+  order: 1;
+}
+.cardsContainer .card:nth-child(even) .cardBanner {
+  order: 2;
+}
+
+.cardsContainer .card:nth-child(odd) .cardDescription {
+  order: 2;
+}
+.cardsContainer .card:nth-child(odd) .cardBanner {
+  order: 1;
+}
+.cardDescription {
+  width: 500px;
 }
 .cardBanner {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
+  width: 350px;
+  height: 500px;
 }
 
+.cardBanner img {
+  object-fit: contain;
+}
 .cardBanner:hover {
   scale: 1.05;
   cursor: pointer;
@@ -30,12 +65,12 @@
 
 .cardsContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 35px;
   padding: 25px 0 75px 0;
 }
 .secondaryHeading {
-  font-size: 26px;
+  font-size: 28px;
   color: #525252;
   text-transform: uppercase;
   font-weight: 500;
@@ -43,7 +78,7 @@
 }
 
 .secondaryDescription {
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 500;
   color: #525252;
 }

@@ -14,6 +14,9 @@ export default function SocialShopping() {
 
       <div className={styles.content}>
         <ul className={styles.cardsContainer}>
+          <h1 className={styles.vid_heading}>
+            HOW INFLUENCERS BECOME YOUR BRAND IMAGE
+          </h1>
           <li className={styles.card}>
             <div className={styles.cardBanner}>
               <img
@@ -71,6 +74,12 @@ export default function SocialShopping() {
               </p>
             </div>
           </li>
+        </ul>
+
+        <ul className={styles.cardsContainer}>
+          <h1 className={styles.vid_heading}>
+            Enhancing Your Shop Page Credibility in TikTok Marketplace
+          </h1>
           <li className={styles.card}>
             <div className={styles.cardBanner}>
               <img

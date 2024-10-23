@@ -3,7 +3,7 @@ import styles from "./Faqs.module.css";
 export default function Faqs() {
   return (
     <div className={styles.faqs}>
-      <h1 className={styles.heading}>Why partner with upGrowth?</h1>
+      <h1 className={styles.heading}>Why partner with TTAfinity?</h1>
 
       <ul className={styles.saleList}>
         <li>
@@ -18,32 +18,57 @@ export default function Faqs() {
           month!
         </li>
       </ul>
+
       <div className={styles.description}>
         <p>
           Everything that we do is centered around getting you better results.
           <br />
           But what does that look like?
         </p>
-        <p>
-          <strong>1) Less meetings and more action</strong>
-        </p>
-        <p>Meetings don't get results - a bias towards action does.</p>
-        <p>
-          <strong>2) Psychology Based Approach To Marketing</strong>
-        </p>
-        <p>
-          We don't just guess at what is going to work. We use a psychological
-          framework to create ads that resonate with your target customers
-          deepest desires.
-        </p>
 
-        <p>
-          <strong>3) We measure brand growth - not ad account growth</strong>
-        </p>
-        <p>
-          We don't believe that there is one tool for growth (if all you have is
-          a hammer, all you see are nails).
-        </p>
+        <div className={styles.faqCardContainer}>
+          <div className={styles.faqCard}>
+            <div>
+              <h3>1) Less meetings and more action</h3>
+              <div className={styles.hoverDiv}>
+                <p>Meetings don't get results - a bias towards action does.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.faqCard}>
+            <div>
+              <h3>2) Psychology Based Approach To Marketing</h3>
+              <div className={styles.hoverDiv}>
+                <p>
+                  We don't just guess at what is going to work. We use a
+                  psychological framework to create ads.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.faqCard}>
+            <div>
+              <h3>3) We measure brand growth - not ad account growth</h3>
+              <div className={styles.hoverDiv}>
+                <p>
+                  We don't believe that there is one tool for growth (if all you
+                  have is a hammer, all you see are nails).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.faqCard}>
+            <div>
+              <h3>1) Less meetings and more action</h3>
+              <div className={styles.hoverDiv}>
+                <p>Meetings don't get results - a bias towards action does.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <p>Instead…</p>
 
         <p>
