@@ -1,6 +1,13 @@
 import BrandItem from "./BrandItem";
 import styles from "./Brands.module.css";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 import grandeLash from "../assets/trustedbrandslogo/grande-cosmetics.jpg";
 
 // import grandeLash from "../assets/trustedbrandslogo/png-transparent-grande-thumbnail.png";
@@ -79,6 +86,68 @@ export default function Brands() {
             <BrandItem key={index} imageUrl={brand.src} altText={brand.alt} />
           ))}
         </ul>
+      </div>
+
+      <div className={styles.sections + " " + styles.bannerContent}>
+        <h3 className={styles.heading}>
+          Why Most Agencies <br /> Falls Short
+        </h3>
+
+        <p>
+          As a leading social media eCommerce agency, TTAffinity delivers
+          end-to-end solutions that earn the trust of the world’s mostf
+          prestigious brands.
+        </p>
+        <p>
+          From Influencer Marketing and Paid Social to Community Management and
+          Social Video Production, we cover every aspect of your brand’s digital
+          presence.
+        </p>
+        <p>
+          Our services include comprehensive Brand Awareness Campaigns, strategy
+          research, competitor analysis, and innovative concept development,
+          like collabs, giveaways, and offline events.
+        </p>
+        <div className={styles.accordian}>
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>
+                1. Agencies Move Too Slowly (Endless Onboarding, Anyone?)
+              </AccordionTrigger>
+              <AccordionContent className={styles.accordianFaqs}>
+                Ever experienced an ultra-responsive sales process, only for
+                things to slow down to a crawl after the first payment? We've
+                been there too. That’s why at our agency, the moment you sign
+                your contract, we hit the ground running – no time wasted.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2">
+              <AccordionTrigger>
+                2. Over-Promising, Under-Delivering
+              </AccordionTrigger>
+              <AccordionContent className={styles.accordianFaqs}>
+                We understand how it feels to be sold on unrealistic promises
+                like "we'll double your sales" only to see little to no
+                progress. Instead, we provide a clear, actionable roadmap from
+                day one, showing you exactly how we’ll drive results step by
+                step.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3">
+              <AccordionTrigger>
+                3. Poor Communication Until It’s Too Late
+              </AccordionTrigger>
+              <AccordionContent className={styles.accordianFaqs}>
+                Ever waited days for a critical response? We've felt that
+                frustration too. That’s why, at TT Afinity, we prioritize
+                real-time communication through shared Slack channels. When
+                something matters, we're there – fast.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ export default function DataList() {
         REACH OUT TO YOUR AFFILIATE AND HOW THEY HAVE PERFORMED WITH US:
       </h1>
       {/* <Filters /> */}
-      <CreaterList />;
+      <CreaterList />
     </div>
   );
 }

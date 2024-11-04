@@ -29,9 +29,12 @@ export default function Faqs() {
         <div className={styles.faqCardContainer}>
           <div className={styles.faqCard}>
             <div>
-              <h3>1) Less meetings and more action</h3>
+              <h3>1) Contracting Influencers</h3>
               <div className={styles.hoverDiv}>
-                <p>Meetings don't get results - a bias towards action does.</p>
+                <p>
+                  We build clear influencer partnerships with well-defined
+                  agreements, handling all details so you can focus on impact.
+                </p>
               </div>
             </div>
           </div>
@@ -62,9 +65,12 @@ export default function Faqs() {
 
           <div className={styles.faqCard}>
             <div>
-              <h3>1) Less meetings and more action</h3>
+              <h3>4) Set Winning KPIs</h3>
               <div className={styles.hoverDiv}>
-                <p>Meetings don't get results - a bias towards action does.</p>
+                <p>
+                  Set clear goals: we tailor campaigns to your vision,
+                  maximizing ROI with KPIs that drive growth and engagement.
+                </p>
               </div>
             </div>
           </div>
@@ -88,7 +94,9 @@ export default function Faqs() {
 
         <p>
           <strong>
-            <h1 className={styles.secondaryHeading}>Here’s the brands stats</h1>
+            <h1 className={styles.secondaryHeading}>
+              HERE’S THE COMPANY BRANDS STATS
+            </h1>
           </strong>
         </p>
       </div>

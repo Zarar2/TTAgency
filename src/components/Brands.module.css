@@ -18,7 +18,9 @@
 
   gap: 10px;
 }
-
+.accordianFaqs {
+  margin: 5px 25px 5px 15px;
+}
 @media (max-width: 768px) {
   .section {
     padding: 35px 0;
@@ -40,5 +42,136 @@
   .section {
     width: 90%;
     padding: 35px 0;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  hsla: (0, 0%, 25.88%, 1);
+}
+
+.bannerContent p {
+  font-size: 17px;
+  margin-bottom: 17px;
+  padding-top: 1px;
+}
+
+.accordion button {
+  padding-top: 0 !important;
+}
+
+.bannerContent p:last-of-type {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.videoPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerContent .heading {
+  font-size: 46px;
+  padding-bottom: 15px;
+  margin: 25px 0px;
+  text-align: center;
+}
+.sections {
+  width: 60%;
+}
+button {
+  font-size: 18px !important;
+  padding-top: 1rem !important;
+}
+div {
+  font-size: 17px;
+}
+.container video {
+  border-radius: 35px;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 42px;
+  }
+  .sections {
+    width: 80%;
+    margin: 25px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    hsla: (0, 0%, 25.88%, 1);
+  }
+  .videoPlayer > div:first-child {
+    border-radius: 35px;
+    margin: auto;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .container video {
+    border-radius: 35px;
+    margin: auto;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .container p {
+    font-size: 16px;
+    margin-bottom: 7px;
+    padding-top: 7px;
+  }
+
+  .bannerContent {
+    width: 65%;
+    padding: 25px 5px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordian {
+    margin-top: 25px;
+  }
+
+  .accordian button {
+    text-align: left;
+  }
+  .heading {
+    font-size: 36px;
+  }
+  .sections {
+    width: 90%;
+    margin: 15px;
+  }
+
+  .videoPlayer > div:first-child {
+    border-radius: 35px;
+    margin: auto;
+    width: 350px !important;
+    height: 400px !important;
+  }
+
+  .container video {
+    border-radius: 35px;
+    margin: auto;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .container p {
+    font-size: 16px;
+    margin-bottom: 7px;
+    padding-top: 7px;
+  }
+
+  .bannerContent {
+    width: 90%;
+    padding: 20px 5px;
+    margin: 0;
   }
 }

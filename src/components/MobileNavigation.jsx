@@ -32,9 +32,9 @@ export default function MobileNavigation({ setIsModalOpen }) {
               <Link to="pricing">PRICING</Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link to="blogs">CASE STUDIES</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="about">WHO ARE WE</Link>
             </li>

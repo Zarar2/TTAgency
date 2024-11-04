@@ -15,7 +15,7 @@ export default function SocialShopping() {
       <div className={styles.content}>
         <ul className={styles.cardsContainer}>
           <h1 className={styles.vid_heading}>
-            HOW INFLUENCERS BECOME YOUR BRAND IMAGE
+            How Social Media Influencers become the Face Of your Brand
           </h1>
           <li className={styles.card}>
             <div className={styles.cardBanner}>
@@ -67,7 +67,9 @@ export default function SocialShopping() {
               />
             </div>
             <div className={styles.cardDescription}>
-              <h2 className={styles.secondaryHeading}>Shoppable Videos</h2>
+              <h2 className={styles.secondaryHeading}>
+                Three Click shop setup
+              </h2>
               <p className={styles.secondaryDescription}>
                 A seamless customer acquisition funnel, requiring just three
                 clicks from the ad to checkout.
