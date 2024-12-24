@@ -18,11 +18,17 @@ export default function Cover() {
         </div>
 
         <div className={styles.sections + " " + styles.bannerContent}>
-          <h3 className={styles.heading}>
-            Globlal e-commerce social media marketing agency..
-          </h3>
+          <h1 className={styles.heading}>
+            TIKTOK DIGITAL MARKETING FIRM
+          </h1>
 
           <p>
+            At <strong>TTAffinity</strong>, we understand the dynamic world of TikTok and its potential 
+            to skyrocket your online store's growth. Specializing in TikTok store management and marketing, our dedicated
+            team is poised to transform your business's digital trajectory.
+          </p>
+
+          {/* <p>
             As a leading social media eCommerce agency,
             <strong>TTAffinity </strong> delivers end-to-end solutions that earn
             the trust of the world’s mostf prestigious brands.
@@ -37,6 +43,12 @@ export default function Cover() {
             strategy research, competitor analysis, and innovative concept
             development, like collabs, giveaways, and offline events.
           </p>
+          <p>
+            At <strong>TTAffinity</strong>, we understand the dynamic world of TikTok and its 
+            potential to skyrocket your online store's growth. Specializing 
+            in TikTok store management and marketing, our dedicated team is 
+            poised to transform your business's digital trajectory.
+          </p> */}
 
           <Button>GET STARTED</Button>
         </div>

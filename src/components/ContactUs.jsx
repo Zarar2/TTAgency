@@ -4,6 +4,7 @@ import service from "../assets/headphone.svg";
 import message from "../assets/message.svg";
 import styles from "./ContactUs.module.css";
 import mail from "../assets/mail.svg";
+import { useEffect } from "react";
 
 const data = [
   {
@@ -37,6 +38,10 @@ const data = [
 ];
 
 export default function ContactUs() {
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
   return (
     <div>
       <h1 className={styles.mainHeading}>

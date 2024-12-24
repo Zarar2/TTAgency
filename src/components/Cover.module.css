@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: space-evenly;
-  hsla: (0, 0%, 25.88%, 1);
+  /* background-color: hsla(0, 0%, 25.88%, 1); */
 }
 
 .container p {
@@ -26,8 +26,11 @@
 }
 
 .heading {
-  font-size: 38px;
+  font-size: 35px;
+  /* font-size: 45px; */
   padding-bottom: 15px;
+  font-weight: 400;
+  white-space: nowrap;
 }
 .sections {
   width: 35%;
@@ -36,9 +39,17 @@
   border-radius: 35px;
 }
 
+@media (max-width: 1150px) {
+  .heading {
+    font-size: 30px;
+    white-space: wrap;
+  }
+}
+
 @media (max-width: 768px) {
   .heading {
-    font-size: 42px;
+    font-size: 30px;
+    white-space: wrap;
   }
   .sections {
     width: 80%;
@@ -48,7 +59,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    hsla: (0, 0%, 25.88%, 1);
+    /* background-color: hsla(0, 0%, 25.88%, 1); */
   }
   .videoPlayer > div:first-child {
     border-radius: 35px;
@@ -86,7 +97,7 @@
     text-align: left;
   }
   .heading {
-    font-size: 36px;
+    font-size: 28px;
   }
   .sections {
     width: 90%;

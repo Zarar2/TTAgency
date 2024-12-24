@@ -94,15 +94,15 @@ export default function Brands() {
         </h3>
 
         <p>
-          As a leading social media eCommerce agency, TTAffinity delivers
-          end-to-end solutions that earn the trust of the world’s mostf
-          prestigious brands.
+          At <strong>TTAffinity</strong>, we understand the dynamic world of TikTok and its potential to skyrocket your
+          online store's growth. Specializing in TikTok store management and marketing, our dedicated
+          team is poised to transform your business's digital trajectory.
         </p>
-        <p>
+        {/* <p>
           From Influencer Marketing and Paid Social to Community Management and
           Social Video Production, we cover every aspect of your brand’s digital
           presence.
-        </p>
+        </p> */}
         <p>
           Our services include comprehensive Brand Awareness Campaigns, strategy
           research, competitor analysis, and innovative concept development,

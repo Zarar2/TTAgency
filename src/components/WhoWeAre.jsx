@@ -8,6 +8,7 @@ import mission from "../assets/about/mission.svg";
 export default function WhoWeAre() {
   return (
     <div className={styles.container}>
+      {/* <h1 className={styles.heading}>Who We Are</h1> */}
       <div className={styles.bulletsContainer}>
         <div className={styles.mainPoints}>
           <h1 className={styles.heading}>E-commerce Growth Experts</h1>

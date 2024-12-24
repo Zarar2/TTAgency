@@ -7,7 +7,8 @@
   font-size: 28px;
   font-weight: 600;
   margin: 16px 0;
-  color: #525252;
+  /* color: #525252; */
+  color: black;
   text-transform: uppercase;
 }
 .card {
@@ -53,7 +54,8 @@
   font-size: 48px;
   font-weight: 600;
   margin: 16px 0;
-  color: #525252;
+  /* color: #525252; */
+  color: black;
   text-transform: uppercase;
 }
 .mainDescriptiom {
@@ -71,7 +73,8 @@
 }
 .secondaryHeading {
   font-size: 28px;
-  color: #525252;
+  /* color: #525252; */
+  color: black;
   text-transform: uppercase;
   font-weight: 500;
   margin: 16px 0;

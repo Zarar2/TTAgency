@@ -9,7 +9,8 @@
 
 .heading {
   font-size: 40px;
-  color: #525252;
+  /* color: #525252; */
+  color: black;
   margin-bottom: 50px;
 }
 .section ul {
@@ -48,7 +49,7 @@
 .container {
   display: flex;
   justify-content: space-evenly;
-  hsla: (0, 0%, 25.88%, 1);
+  /* hsla: (0, 0%, 25.88%, 1); */
 }
 
 .bannerContent p {
@@ -104,7 +105,7 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    hsla: (0, 0%, 25.88%, 1);
+    /* hsla: (0, 0%, 25.88%, 1); */
   }
   .videoPlayer > div:first-child {
     border-radius: 35px;

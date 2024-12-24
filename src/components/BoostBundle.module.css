@@ -1,0 +1,110 @@
+.boostBundle {
+  background-color: #e5e4e2 !important;
+}
+
+/* Services Section */
+.servicesSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px 20px 20px;
+}
+
+.serviceCategory {
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px gray;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.serviceCategory:hover {
+  transform: scale(1.05); /* Zoom effect */
+  box-shadow: 0 8px 16px gray; /* Enhanced shadow on hover */
+}
+
+.serviceTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #e5e4e2;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.serviceTitle:hover {
+  background-color: lightgray;
+}
+
+.serviceList {
+  list-style-type: none;
+  padding: 0 8px;
+  margin: 0;
+}
+
+.serviceList li {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.serviceList li:hover {
+  transform: scale(1.05);
+}
+
+/* Call to Action Section */
+.ctaSection {
+  background-color: #e5e4e2 !important;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  box-shadow: 0 2px 2px gray;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ctaSection:hover {
+  background-color: lightgray;
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px gray;
+}
+
+.ctaContent {
+  text-align: left;
+  max-width: 60%; /* Adjust as needed to control the width of the text */
+}
+
+.ctaTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.ctaDescription {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  background-color: transparent;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: 1px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+  background-color: #0095ff;
+  color: white !important;
+  border-color: #0095ff;
+}

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaDiscord } from 'react-icons/fa';
 import Logo from "./Logo";
 import styles from "./Footer.module.css";
 
@@ -9,8 +10,15 @@ export default function Footer() {
         <div className={styles.footerLogo}>
           <Logo footer="foot_logo" />
           <div className={styles.socialIcons}>
-            <a href="#!" role="button">
-              {/* <!-- Facebook --> */}
+            <a href="https://discord.com/invite/sGZq3RM3wE" role="button" target="_blank">
+              <FaDiscord 
+                style={{ color: "#7289da", width: "35px", height: "35px" }}
+              />
+            </a>
+
+
+            {/* <a href="#!" role="button">
+              {/* <!-- Facebook --> *
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-7 w-7"
@@ -23,7 +31,7 @@ export default function Footer() {
             </a>
 
             <a href="#!" role="button">
-              {/* <!-- Instagram --> */}
+              {/* <!-- Instagram --> *
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-7 w-7"
@@ -36,7 +44,7 @@ export default function Footer() {
             </a>
 
             <a href="#!" role="button">
-              {/* <!-- Google --> */}
+              {/* <!-- Google --> *
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-7 w-7"
@@ -49,7 +57,7 @@ export default function Footer() {
             </a>
 
             <a href="#!" role="button">
-              {/* <!-- Twitter --> */}
+              {/* <!-- Twitter --> *
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-7 w-7"
@@ -59,7 +67,7 @@ export default function Footer() {
               >
                 <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
               </svg>
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -97,7 +105,7 @@ export default function Footer() {
             </h1>
 
             <li>
-              <Link>Terms Of Service</Link>
+              <Link to="/termOfServices">Terms Of Service</Link>
             </li>
             <li>
               <Link>Privacy Policy</Link>
@@ -105,7 +113,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <p className={styles.copyright}>Copyright © 2024 TTAfinity</p>
+      <p className={styles.copyright}>Copyright © 2025 TTAfinity</p>
     </footer>
   );
 }

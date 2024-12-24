@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const flowbite = require("flowbite-react/tailwind");
+import flowbite from "flowbite-react/tailwind";
+// const flowbite = require("flowbite-react/tailwind");
 export default {
   darkMode: ["class"],
   content: ["./src/**/*.{js,jsx,ts,tsx}", flowbite.content()],
