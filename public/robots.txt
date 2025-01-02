@@ -1,0 +1,10 @@
+# robots.txt file for https://www.ttaffinity.com/
+
+# Allow all web crawlers full access
+User-agent: *
+Disallow:
+
+# Link to the sitemap
+Sitemap: https://www.ttaffinity.com/sitemap.xml
+
+# End of robots.txt
