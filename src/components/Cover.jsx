@@ -7,11 +7,18 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Lottie from "lottie-react";
+import { Helmet } from "react-helmet";
 import phone from "../assets/phone-animation.json";
 
 export default function Cover() {
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Explore the thrilling new product launches on TikTok! Get the scoop on the latest innovations, features, and trends that are shaking up the digital world. Stay ahead with TikTok's new product launches – where creativity meets technology."
+        />
+      </Helmet>
       <div className={styles.container}>
         <div className={styles.sections + " " + styles.videoPlayer}>
           <Lottie animationData={phone} />
@@ -23,9 +30,7 @@ export default function Cover() {
           </h1>
 
           <p>
-            At <strong>TTAffinity</strong>, we understand the dynamic world of TikTok and its potential 
-            to skyrocket your online store's growth. Specializing in TikTok store management and marketing, our dedicated
-            team is poised to transform your business's digital trajectory.
+            Tiktok marketing is all about understanding the Dynamics , at <strong>TTaffinity</strong> using automation and figuring geological post scheduling of your product for the highest output utilizing past data and setting triggers with self made automation tools that cuts the manual labor, working 24/7 for your store
           </p>
 
           {/* <p>

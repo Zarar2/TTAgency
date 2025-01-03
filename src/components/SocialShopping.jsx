@@ -3,7 +3,7 @@ import styles from "./SocialShopping.module.css";
 export default function SocialShopping() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.mainHeading}>Social Shopping Is The Future</h1>
+      <h2 className={styles.mainHeading}>Social Shopping Is The Future</h2>
       <p className={styles.mainDescriptiom}>
         Leverage the power of social shopping with the most powerful platform in
         the space. Backed by TikTok’s cutting-edge discovery engine, TikTok Shop
@@ -14,9 +14,9 @@ export default function SocialShopping() {
 
       <div className={styles.content}>
         <ul className={styles.cardsContainer}>
-          <h1 className={styles.vid_heading}>
+          <h2 className={styles.vid_heading}>
             How Social Media Influencers become the Face Of your Brand
-          </h1>
+          </h2>
           <li className={styles.card}>
             <div className={styles.cardBanner}>
               <img
@@ -38,7 +38,7 @@ export default function SocialShopping() {
               />
             </div>
             <div className={styles.cardDescription}>
-              <h2 className={styles.secondaryHeading}>Live Shopping</h2>
+              <h3 className={styles.secondaryHeading}>Live Shopping</h3>
               <p className={styles.secondaryDescription}>
                 TikTok Live is becoming the modern-day QVC, enabling brands to
                 build real-time engagement with customers, foster community, and
@@ -67,9 +67,9 @@ export default function SocialShopping() {
               />
             </div>
             <div className={styles.cardDescription}>
-              <h2 className={styles.secondaryHeading}>
+              <h3 className={styles.secondaryHeading}>
                 Three Click shop setup
-              </h2>
+              </h3>
               <p className={styles.secondaryDescription}>
                 A seamless customer acquisition funnel, requiring just three
                 clicks from the ad to checkout.
@@ -79,9 +79,9 @@ export default function SocialShopping() {
         </ul>
 
         <ul className={styles.cardsContainer}>
-          <h1 className={styles.vid_heading}>
+          <h2 className={styles.vid_heading}>
             Enhancing Your Shop Page Credibility in TikTok Marketplace
-          </h1>
+          </h2>
           <li className={styles.card}>
             <div className={styles.cardBanner}>
               <img
@@ -103,7 +103,7 @@ export default function SocialShopping() {
               />
             </div>
             <div className={styles.cardDescription}>
-              <h2 className={styles.secondaryHeading}>Shop Page</h2>
+              <h3 className={styles.secondaryHeading}>Shop Page</h3>
               <p className={styles.secondaryDescription}>
                 Allow your audience to shop and make purchases without ever
                 leaving the TikTok app
@@ -131,7 +131,7 @@ export default function SocialShopping() {
               />
             </div>
             <div className={styles.cardDescription}>
-              <h2 className={styles.secondaryHeading}> marketplace</h2>
+              <h3 className={styles.secondaryHeading}> marketplace</h3>
               <p className={styles.secondaryDescription}>
                 Increased visibility for your products and brand through
                 TikTok’s marketplace.

@@ -108,3 +108,7 @@
   color: white !important;
   border-color: #0095ff;
 }
+
+.discordLink{
+  text-decoration: underline !important;
+}

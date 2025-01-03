@@ -3,7 +3,7 @@ import styles from "./Faqs.module.css";
 export default function Faqs() {
   return (
     <div className={styles.faqs}>
-      <h1 className={styles.heading}>Why partner with TTAfinity?</h1>
+      <h2 className={styles.heading}>Why partner with TTAfinity?</h2>
 
       <ul className={styles.saleList}>
         <li>
@@ -85,18 +85,18 @@ export default function Faqs() {
 
         <p>
           <strong>
-            <h1 className={styles.secondaryHeading}>
+            <h2 className={styles.secondaryHeading}>
               The choice is yours: Do you want to grow with us using our
               strategies?
-            </h1>
+            </h2>
           </strong>
         </p>
 
         <p>
           <strong>
-            <h1 className={styles.secondaryHeading}>
+            <h2 className={styles.secondaryHeading}>
               HERE’S THE COMPANY BRANDS STATS
-            </h1>
+            </h2>
           </strong>
         </p>
       </div>

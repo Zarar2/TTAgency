@@ -29,7 +29,8 @@ const BoostBundle = () => {
             LEAD SCRAPER <Link to="pricing"><i className="bi bi-clipboard-check"></i></Link>
           </h3>
           <ul className={styles.serviceList}>
-            <li><i className="bi bi-link-45deg"></i> COMING SOON</li>
+            <li>Coming Soon</li>
+            <li>For updates join our <a href="https://discord.com/invite/prvX8BKA" className={styles.discordLink}>Discord</a> channel</li>
           </ul>
         </div>
         <div className={styles.serviceCategory}>
@@ -38,7 +39,8 @@ const BoostBundle = () => {
             TIKTOK VOICE AGENTS <Link to="pricing"><i className="bi bi-headset"></i></Link>
           </h3>
           <ul className={styles.serviceList}>
-            <li><i className="bi bi-link-45deg"></i> COMING SOON</li>
+            <li>Coming Soon</li>
+            <li> For updates join our <a href="https://discord.com/invite/prvX8BKA" className={styles.discordLink}>Discord</a> channel</li>
           </ul>
         </div>
         <div className={styles.serviceCategory}>

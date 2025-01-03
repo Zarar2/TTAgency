@@ -78,7 +78,7 @@ export default function Brands() {
 
   return (
     <div className={styles.section}>
-      <h1 className={styles.heading}>Trusted By Brands like</h1>
+      <h2 className={styles.heading}>Trusted By Brands like</h2>
 
       <div>
         <ul>
@@ -89,9 +89,9 @@ export default function Brands() {
       </div>
 
       <div className={styles.sections + " " + styles.bannerContent}>
-        <h3 className={styles.heading}>
+        <h2 className={styles.heading}>
           Why Most Agencies <br /> Falls Short
-        </h3>
+        </h2>
 
         <p>
           At <strong>TTAffinity</strong>, we understand the dynamic world of TikTok and its potential to skyrocket your
